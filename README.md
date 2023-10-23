@@ -22,5 +22,5 @@ docker exec -it sql-server-db "bash"
 
 - Conectar no SQL Server dentro do container:
 ```sh
-opt/mssql-tools/bin/sqlcmd -S localhost -U usuario -P senha
+/opt/mssql-tools/bin/sqlcmd -S localhost -U usuario -P senha
 ```
