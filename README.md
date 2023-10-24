@@ -1,11 +1,16 @@
 ## SQL Server Workspace
 
-- Iniciar a imagem docker:
+- Iniciar o container:
 ```sh
 docker-compose up -d
 ```
 
-- Desligar a imagem docker:
+- Desligar o container:
+```sh
+docker-compose stop
+```
+
+- Desativar e Remover o container:
 ```sh
 docker-compose down
 ```
@@ -24,3 +29,6 @@ docker exec -it sql-server-db "bash"
 ```sh
 /opt/mssql-tools/bin/sqlcmd -S localhost -U usuario -P senha
 ```
+
+- Importante:
+É necessário alterar a variável de senha dentro do docker-compose com a senha que você quiser.
